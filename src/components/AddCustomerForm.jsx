@@ -35,7 +35,7 @@ const AddCustomerForm = ({ onCustomerAdded }) => {
 
     try {
       // Actual API call to MongoDB backend
-      await axios.post("http://localhost:8080/users/createCustomer", newCustomer);
+      await axios.post("https://server-taupe-theta-31.vercel.app/users/createCustomer", newCustomer);
       
       // Log for debugging
       console.log("Customer data sent to MongoDB:", newCustomer);

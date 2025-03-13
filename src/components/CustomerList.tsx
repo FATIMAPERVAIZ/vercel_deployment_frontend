@@ -31,7 +31,7 @@ const CustomerList = () => {
     try {
       // This is a mock implementation since we can't connect to a real API in this demo
       // In a real app, you would use this:
-      const response = await axios.get("http://localhost:8080/users/getAllCustomers");
+      const response = await axios.get("https://server-taupe-theta-31.vercel.app/users/getAllCustomers");
       setCustomers(response.data.customer);
       
       //Mock data for demonstration purposes

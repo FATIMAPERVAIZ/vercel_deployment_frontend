@@ -21,7 +21,7 @@ const CustomerList = () => {
     setLoading(true);
     try {
       // Actual API call to MongoDB backend
-      const response = await axios.get("http://localhost:8080/users/getAllCustomers");
+      const response = await axios.get("https://server-taupe-theta-31.vercel.app/users/getAllCustomers");
       setCustomers(response.data.customer);
       console.log("Customers fetched from MongoDB:", response.data.customer);
     } catch (error) {
